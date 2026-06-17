@@ -3,268 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IgniteForce 焱火擎光 - HUE-VEX Laboratory VEXU Robotics Team">
-    <title>IgniteForce 焱火擎光 | HUE-VEX Laboratory</title>
+    <meta name="description" content="HUE-VEX VEXU 机器人团队首页，统一入口连接论坛、网盘、GitHub 与团队协作资料。">
+    <title>HUE-VEX | VEXU Robotics Team</title>
+    <link rel="icon" href="assets/TeamLogo/BlackLogo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts removed for performance/stability -->
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <span class="logo-icon">🔥</span>
-                <span class="brand-text">IgniteForce</span>
-            </div>
-            <button class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+    <header class="site-header">
+        <div class="shell header-inner">
+            <a class="brand" href="#home" aria-label="HUE-VEX 首页">
+                <img class="brand-mark" src="assets/TeamLogo/BlackLogo.png" alt="">
+                <span class="brand-name">HUE-VEX</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="打开导航" aria-expanded="false" aria-controls="siteNav">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
             </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">首页 Home</a></li>
-                <li><a href="#about" class="nav-link">关于 About</a></li>
-                <li><a href="#competition" class="nav-link">竞赛 Competition</a></li>
-                <li><a href="#team" class="nav-link">团队 Team</a></li>
-                <li><a href="#contact" class="nav-link">联系 Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-logo">🔥</div>
-            <h1 class="hero-title">
-                <span class="title-main">IgniteForce</span>
-                <span class="title-chinese">焱火擎光</span>
-            </h1>
-            <p class="hero-subtitle">HUE-VEX Laboratory</p>
-            <p class="hero-description">
-                Igniting Innovation, Powering Excellence
-                <br>
-                点燃创新之火，照亮卓越之路
-            </p>
-            <div class="hero-buttons">
-                <a href="#about" class="btn btn-primary">了解我们 Learn More</a>
-                <a href="#contact" class="btn btn-secondary">加入我们 Join Us</a>
-            </div>
+            <nav class="site-nav" id="siteNav" aria-label="主导航">
+                <a href="#services">服务入口</a>
+                <a href="#workspace">团队协作</a>
+                <a href="#projects">项目方向</a>
+                <a href="#join">加入我们</a>
+            </nav>
         </div>
-        <div class="hero-animation">
-            <div class="flame-particle"></div>
-            <div class="flame-particle"></div>
-            <div class="flame-particle"></div>
-        </div>
-    </section>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="section about-section">
-        <div class="container">
-            <h2 class="section-title">关于我们 <span class="title-divider">|</span> About Us</h2>
-            <div class="about-content">
-                <div class="about-card">
-                    <div class="card-icon">🎓</div>
-                    <h3>实验室简介 Laboratory</h3>
-                    <p>
-                        <strong>HUE-VEX实验室</strong>专注于机器人技术研发与竞赛，致力于培养学生的创新能力和工程实践能力。
+    <main id="home">
+        <section class="hero">
+            <div class="shell hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">VEXU Robotics Team</p>
+                    <h1>HUE-VEX</h1>
+                    <p class="hero-lead">
+                        面向 VEXU 机器人竞赛的工程协作团队。这里是团队的统一入口，连接讨论、资料、代码与赛季沉淀。
                     </p>
-                    <p>
-                        The HUE-VEX Laboratory focuses on robotics research and competitions, dedicated to cultivating students' innovation and engineering practice abilities.
-                    </p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">🤖</div>
-                    <h3>IgniteForce 焱火擎光</h3>
-                    <p>
-                        我们是HUE-VEX实验室的核心竞赛团队，以<strong>"焱火擎光"</strong>为名，寓意点燃创新之火，照亮前行之路。
-                    </p>
-                    <p>
-                        We are the core competition team of HUE-VEX Laboratory. Our name "IgniteForce" symbolizes igniting the fire of innovation and lighting the path forward.
-                    </p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">🏆</div>
-                    <h3>团队使命 Mission</h3>
-                    <p>
-                        在VEXU竞赛中追求卓越，通过团队协作和技术创新，展现中国大学生的风采。
-                    </p>
-                    <p>
-                        Pursuing excellence in VEXU competitions through teamwork and technological innovation, showcasing the talents of Chinese university students.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Competition Section -->
-    <section id="competition" class="section competition-section">
-        <div class="container">
-            <h2 class="section-title">VEXU竞赛 <span class="title-divider">|</span> Competition</h2>
-            <div class="competition-content">
-                <div class="competition-info">
-                    <h3>什么是VEXU？ What is VEXU?</h3>
-                    <p>
-                        <strong>VEX U</strong>是面向大学生的机器人竞赛项目，是VEX Robotics Competition的大学组别。
-                        参赛团队需要设计、制造并操控机器人完成各种挑战任务。
-                    </p>
-                    <p>
-                        <strong>VEX U</strong> is a university-level robotics competition program, part of the VEX Robotics Competition.
-                        Teams design, build, and operate robots to complete various challenge tasks.
-                    </p>
-                </div>
-                <div class="competition-features">
-                    <div class="feature-item">
-                        <div class="feature-icon">⚙️</div>
-                        <h4>机械设计 Mechanical Design</h4>
-                        <p>创新的机械结构与精密的工程设计</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">💻</div>
-                        <h4>编程控制 Programming</h4>
-                        <p>自动与手动控制的完美结合</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">🤝</div>
-                        <h4>团队协作 Teamwork</h4>
-                        <p>跨学科团队的紧密合作</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">🎯</div>
-                        <h4>战略思维 Strategy</h4>
-                        <p>比赛策略与现场应变能力</p>
+                    <div class="hero-actions" aria-label="常用入口">
+                        <a class="button button-primary" data-link-key="forum" href="#">进入论坛</a>
+                        <a class="button button-secondary" data-link-key="drive" href="#">进入网盘</a>
+                        <a class="button button-quiet" data-link-key="github" href="https://github.com/hue-vex">GitHub</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Team Section -->
-    <section id="team" class="section team-section">
-        <div class="container">
-            <h2 class="section-title">我们的团队 <span class="title-divider">|</span> Our Team</h2>
-            <div class="team-intro">
-                <p>
-                    IgniteForce团队由一群热爱机器人技术、富有创新精神的大学生组成。
-                    我们来自不同专业背景，但都怀揣着同样的梦想——在VEXU赛场上展现中国大学生的实力。
-                </p>
-                <p>
-                    The IgniteForce team consists of university students passionate about robotics and innovation.
-                    From diverse academic backgrounds, we share the same dream—to showcase Chinese university students' capabilities on the VEXU stage.
-                </p>
-            </div>
-            <div class="team-structure">
-                <div class="team-card">
-                    <div class="team-icon">⚙️</div>
-                    <h3>机械组</h3>
-                    <h4>Mechanical Group</h4>
-                    <p>负责机器人机械结构的创新设计与精密制造</p>
-                </div>
-                <div class="team-card">
-                    <div class="team-icon">⚡</div>
-                    <h3>电控组</h3>
-                    <h4>Electronics & Control</h4>
-                    <p>负责嵌入式硬件开发与底层控制系统</p>
-                </div>
-                <div class="team-card">
-                    <div class="team-icon">👁️</div>
-                    <h3>感知组</h3>
-                    <h4>Perception & AI</h4>
-                    <p>负责机器视觉、定位导航与智能算法</p>
-                </div>
-                <div class="team-card">
-                    <div class="team-icon">📣</div>
-                    <h3>运营组</h3>
-                    <h4>Operations</h4>
-                    <p>负责团队品牌建设、宣传推广与资源管理</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section class="section achievements-section">
-        <div class="container">
-            <h2 class="section-title">团队成就 <span class="title-divider">|</span> Achievements</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-icon">🏆</div>
-                    <h3 class="achievement-number">Multiple</h3>
-                    <p>参赛经历 Competition Experiences</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">🎯</div>
-                    <h3 class="achievement-number">100%</h3>
-                    <p>团队投入 Team Dedication</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">🚀</div>
-                    <h3 class="achievement-number">Ongoing</h3>
-                    <p>技术创新 Innovation</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-        <div class="container">
-            <h2 class="section-title">联系我们 <span class="title-divider">|</span> Contact Us</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>加入我们 Join Us</h3>
-                    <p>
-                        如果你对机器人技术充满热情，想要在VEXU竞赛中挑战自我，欢迎加入IgniteForce团队！
-                    </p>
-                    <p>
-                        If you're passionate about robotics and want to challenge yourself in VEXU competitions, welcome to join IgniteForce!
-                    </p>
-                    <div class="contact-methods">
-                        <div class="contact-item">
-                            <span class="contact-icon">📧</span>
-                            <span>Email: hue-vex@qq.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">🏫</span>
-                            <span>Location: HUE-VEX Laboratory</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">🔗</span>
-                            <span>GitHub: github.com/IgniteForce</span>
-                        </div>
+                <aside class="status-panel" aria-label="团队服务状态概览">
+                    <div class="status-panel-header">
+                        <span>Team Console</span>
+                        <span class="status-dot" aria-hidden="true"></span>
                     </div>
+                    <div class="status-list">
+                        <a class="status-row" data-link-key="forum" href="#">
+                            <span class="service-badge">Forum</span>
+                            <span class="service-copy">
+                                <strong>Discourse 论坛</strong>
+                                <small>公告、讨论、复盘、技术问答</small>
+                            </span>
+                            <span class="row-arrow" aria-hidden="true">›</span>
+                        </a>
+                        <a class="status-row" data-link-key="drive" href="#">
+                            <span class="service-badge">Drive</span>
+                            <span class="service-copy">
+                                <strong>Cloudreve 网盘</strong>
+                                <small>CAD、BOM、文档、影像归档</small>
+                            </span>
+                            <span class="row-arrow" aria-hidden="true">›</span>
+                        </a>
+                        <a class="status-row" data-link-key="github" href="https://github.com/hue-vex">
+                            <span class="service-badge">Code</span>
+                            <span class="service-copy">
+                                <strong>GitHub 仓库</strong>
+                                <small>主页源码与公开项目</small>
+                            </span>
+                            <span class="row-arrow" aria-hidden="true">›</span>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section" id="services">
+            <div class="shell">
+                <div class="section-heading">
+                    <p class="eyebrow">Services</p>
+                    <h2>统一入口</h2>
+                    <p>论坛负责沉淀讨论，网盘负责归档资料，GitHub 负责公开代码与页面版本。</p>
                 </div>
-                <div class="contact-cta">
-                    <div class="cta-card">
-                        <h4>我们寻找的队员</h4>
-                        <h5>We're Looking For</h5>
-                        <ul>
-                            <li>✓ 机械工程 Mechanical Engineering</li>
-                            <li>✓ 计算机科学 Computer Science</li>
-                            <li>✓ 电子工程 Electronic Engineering</li>
-                            <li>✓ 自动化控制 Automation</li>
-                            <li>✓ 以及所有热爱机器人的你 And Anyone Passionate About Robotics!</li>
-                        </ul>
+
+                <div class="service-grid">
+                    <a class="service-card" data-link-key="forum" href="#">
+                        <span class="card-kicker">Discourse</span>
+                        <h3>论坛</h3>
+                        <p>发布公告、讨论设计、记录赛季复盘，让问题和结论都能被再次找到。</p>
+                        <span class="card-link">打开论坛</span>
+                    </a>
+                    <a class="service-card" data-link-key="drive" href="#">
+                        <span class="card-kicker">Cloudreve</span>
+                        <h3>网盘</h3>
+                        <p>集中存放图纸、物料表、代码包、照片视频、比赛资料和培训文档。</p>
+                        <span class="card-link">打开网盘</span>
+                    </a>
+                    <a class="service-card" data-link-key="github" href="https://github.com/hue-vex">
+                        <span class="card-kicker">GitHub</span>
+                        <h3>代码</h3>
+                        <p>维护团队主页、公开项目、工具脚本和可复用的工程模板。</p>
+                        <span class="card-link">查看仓库</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-muted" id="workspace">
+            <div class="shell workspace-layout">
+                <div class="section-heading align-left">
+                    <p class="eyebrow">Workspace</p>
+                    <h2>团队协作目录</h2>
+                    <p>每个方向都围绕工程交付组织资料、任务和复盘，减少信息散落在聊天记录里的损耗。</p>
+                </div>
+
+                <div class="team-table" role="list" aria-label="团队方向">
+                    <div class="team-row" role="listitem">
+                        <span>Mechanical</span>
+                        <strong>机械结构、加工装配、迭代记录</strong>
+                    </div>
+                    <div class="team-row" role="listitem">
+                        <span>Electronics</span>
+                        <strong>电控硬件、布线规范、底层调试</strong>
+                    </div>
+                    <div class="team-row" role="listitem">
+                        <span>Software</span>
+                        <strong>控制程序、自动策略、工具链维护</strong>
+                    </div>
+                    <div class="team-row" role="listitem">
+                        <span>Vision</span>
+                        <strong>感知定位、图像处理、算法验证</strong>
+                    </div>
+                    <div class="team-row" role="listitem">
+                        <span>Operations</span>
+                        <strong>赛务、宣传、资产管理、招新培训</strong>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-icon">🔥</span>
-                    <span class="brand-text">IgniteForce 焱火擎光</span>
+        <section class="section" id="projects">
+            <div class="shell">
+                <div class="section-heading">
+                    <p class="eyebrow">Projects</p>
+                    <h2>赛季工程流</h2>
+                    <p>首页只放团队协作的主入口，具体讨论、文档和文件交给对应系统承载。</p>
                 </div>
-                <p class="footer-text">
-                    HUE-VEX Laboratory | VEXU Robotics Competition Team
-                </p>
-                <p class="footer-copyright">
-                    © 2024-2026 IgniteForce. Igniting Innovation, Powering Excellence.
-                </p>
+
+                <div class="process-grid">
+                    <div class="process-item">
+                        <span class="step-number">01</span>
+                        <h3>需求与规则</h3>
+                        <p>在论坛整理规则解读、比赛策略和关键问题。</p>
+                    </div>
+                    <div class="process-item">
+                        <span class="step-number">02</span>
+                        <h3>设计与验证</h3>
+                        <p>在网盘归档 CAD、BOM、测试数据和版本快照。</p>
+                    </div>
+                    <div class="process-item">
+                        <span class="step-number">03</span>
+                        <h3>代码与工具</h3>
+                        <p>在 GitHub 维护公开代码、脚本和页面源码。</p>
+                    </div>
+                    <div class="process-item">
+                        <span class="step-number">04</span>
+                        <h3>复盘与传承</h3>
+                        <p>把比赛记录、踩坑经验和培训材料沉淀为可检索资产。</p>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section class="join-band" id="join">
+            <div class="shell join-inner">
+                <div>
+                    <p class="eyebrow">Join</p>
+                    <h2>加入 HUE-VEX</h2>
+                    <p>欢迎对机械、电子、软件、视觉算法、运营协作感兴趣的同学一起参与 VEXU 赛季建设。</p>
+                </div>
+                <a class="button button-primary" href="mailto:hue-vex@qq.com">联系团队</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <span>HUE-VEX</span>
+            <span class="footer-meta">Formerly IgniteForce. © <span id="currentYear">2026</span> HUE-VEX Robotics Team.</span>
         </div>
     </footer>
 
