@@ -502,7 +502,8 @@ if (canvas) {
     const statusSprites = [
         createSprite("FIELD MAP", "PATH ONLINE", new THREE.Vector3(2.5, 2.9, -2.9), new THREE.Vector3(1.9, 0.6, 1), "#7dd3fc"),
         createSprite("AUTO ROUTE", "7 NODES LOCKED", new THREE.Vector3(4.55, 1.65, 0.6), new THREE.Vector3(1.75, 0.56, 1), "#22c55e"),
-        createSprite("HUE-VEX", "CONTROL SURFACE", new THREE.Vector3(1.0, 3.72, -2.6), new THREE.Vector3(2.2, 0.68, 1), "#f8fbff")
+        createSprite("HUE-VEX", "CONTROL SURFACE", new THREE.Vector3(1.0, 3.72, -2.6), new THREE.Vector3(2.2, 0.68, 1), "#f8fbff"),
+        createSprite("BEZIER PATH", "B(t)=(1-t)^3P0+3(1-t)^2tP1+3(1-t)t^2P2+t^3P3", new THREE.Vector3(-1.0, 2.12, 2.82), new THREE.Vector3(3.0, 0.56, 1), "#7dd3fc")
     ];
 
     const particleGeometry = new THREE.BufferGeometry();
